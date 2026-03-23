@@ -1,6 +1,6 @@
 @SmartCommerce.API_HostAddress = http://localhost:5209
 
-GET {{SmartCommerce.API_HostAddress}}/weatherforecast/
+GET https://localhost:7090/swagger/
 Accept: application/json
 
 ###
