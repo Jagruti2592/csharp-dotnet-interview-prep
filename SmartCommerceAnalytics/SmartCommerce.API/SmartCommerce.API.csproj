@@ -12,11 +12,12 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.5" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\SmartCommerce.Application\SmartCommerce.Application.csproj" />
+    <ProjectReference Include="..\SmartCommerce.Domain\SmartCommerce.Domain.csproj" />
     <ProjectReference Include="..\SmartCommerce.Infrastructure\SmartCommerce.Infrastructure.csproj" />
   </ItemGroup>
 

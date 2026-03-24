@@ -1,4 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using SmartCommerce.Application.Services;
+
 
 namespace SmartCommerce.Application
 {
@@ -6,6 +8,7 @@ namespace SmartCommerce.Application
     {
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
+            services.AddScoped<IUserService, UserService>();
             return services;
         }
     }
