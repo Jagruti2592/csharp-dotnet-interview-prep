@@ -1,3 +1,4 @@
+using SmartCommerce.API.Middlewares;
 using SmartCommerce.Application;
 using SmartCommerce.Infrastructure;
 
@@ -20,7 +21,7 @@ var app = builder.Build();
     app.UseSwagger();
     app.UseSwaggerUI();
 
-
+app.UseMiddleware<ExceptionMiddleware>();
 app.UseHttpsRedirection();
 app.UseAuthorization();
 

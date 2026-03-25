@@ -3,6 +3,7 @@ using SmartCommerce.Application.Interfaces;
 using SmartCommerce.Application.Services;
 using SmartCommerce.Application.DTOs;
 using SmartCommerce.Application.Mappings;
+using SmartCommerce.Application.Exceptions;
 
 namespace SmartCommerce.Application.Services {
 
@@ -26,7 +27,7 @@ namespace SmartCommerce.Application.Services {
         public async Task<UserDto?> GetUserByIdAsync(int id)
         {
             var user= await _repository.GetByIdAsync(id);
-            return user == null ? null : UserMapping.ToDto(user);
+            return user == null ? throw new NotFoundException($"User with ID {id} not found") : UserMapping.ToDto(user);
         }
 
         public async Task<UserDto> CreateUserAsync(CreateUserDto dto)
