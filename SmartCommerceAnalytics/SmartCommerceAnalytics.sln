@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.37027.9 d17.14
+VisualStudioVersion = 17.14.37027.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCommerce.API", "SmartCommerce.API\SmartCommerce.API.csproj", "{974FFB39-6EBF-47D9-B9E5-C98C94493782}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCommerce.Infrastructure", "SmartCommerce.Infrastructure\SmartCommerce.Infrastructure.csproj", "{23124E03-E807-43AE-9EA4-7407C4F1F552}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCommerce.Domain", "SmartCommerce.Domain\SmartCommerce.Domain.csproj", "{10F4F38F-BA26-47B7-ADFC-254EE04EE93F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartCommerce.Tests", "SmartCommerce.Tests\SmartCommerce.Tests.csproj", "{F56699AE-DE9A-41C7-8891-2F0D2D2FBF6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{10F4F38F-BA26-47B7-ADFC-254EE04EE93F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10F4F38F-BA26-47B7-ADFC-254EE04EE93F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10F4F38F-BA26-47B7-ADFC-254EE04EE93F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F56699AE-DE9A-41C7-8891-2F0D2D2FBF6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F56699AE-DE9A-41C7-8891-2F0D2D2FBF6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F56699AE-DE9A-41C7-8891-2F0D2D2FBF6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F56699AE-DE9A-41C7-8891-2F0D2D2FBF6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

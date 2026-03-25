@@ -3,10 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SmartCommerce.Application.Exceptions;
 
-namespace SmartCommerce.Application.Exception
+
+namespace SmartCommerce.Application.Exceptions
 {
-    internal class AppException
+    public abstract class AppException: Exception
     {
+        public int StatusCode { get; }
+
+        protected AppException(string message, int statusCode) : base(message)
+        {
+            StatusCode = statusCode;
+        }
     }
 }
