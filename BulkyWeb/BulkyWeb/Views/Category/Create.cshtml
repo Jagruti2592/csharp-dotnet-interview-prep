@@ -8,14 +8,16 @@
         <h2 class="text-primary">Create Category</h2>
         <hr/>
     </div>
-
-    <div class="mb-3 row">
-        <label class="p-0"> Category Name</label>
-        <input type="text" class="form-control"/>
-            </div>
-            <div class="mb-3 row">
-                <labe class="p-1"> Display Order</labe>
-        <input type="text" class="form-control" />
+    <div asp-validation-summary="All" class="text-bg-warning"></div>
+    <div class="mb-3 row p-1">
+        <label asp-for="Name" class="p-0"> </label>
+        <input asp-for="Name"  class="form-control"/>
+        <span asp-asp-validation-for="Name" class="text-bg-danger"></span>
+     </div>
+            <div class="mb-3 row p-1">
+        <label asp-for="DisplayOrder" class="p-1"> </label>
+        <input  asp-for="DisplayOrder"  class="form-control" />
+        <span asp-validation-for="DisplayOrder" class="text-danger"></span>
     </div>
 
     <div class="row">
